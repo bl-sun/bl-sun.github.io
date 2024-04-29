@@ -35,6 +35,7 @@ code_word_wrap: false
 #   icon: link || the description || color
 social:
   fab fa-github: //github.com/bl-sun || Github || '#24292e'
+  fa-brands fa-git-alt: //gitee.com/bl-sun || gitee || '#24292e'
   fas fa-envelope: mailto:baolei.sun@qq.com || Email || '#24292e'
   fab fa-bilibili: //space.bilibili.com/260045923 || 哔哩哔哩 || '#24292e'
 
@@ -922,6 +923,7 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4530244_sqplwqcvuiq.css">
   bottom:
     # - <script src="xxxx"></script>
 

@@ -1,7 +1,7 @@
 ---
 title: 主题图片
 date: 2024-04-29 20:40:23
-permalink: /gallery/theme
+permalink: /gallery/theme/
 ---
 {% gallery %}
 ![](/images/index.jpg)
