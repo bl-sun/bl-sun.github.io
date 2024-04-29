@@ -1,12 +1,18 @@
 ---
 title: git 学习笔记
 date: 2024-04-28 21:10:18
-tags:
+tags: 
+   - git
+   - 编程
 ---
 
 # git 学习笔记
 
 ## 1. 工作流
+
+【十分钟学会正确的github工作流，和开源作者们使用同一套流程】 [https://www.bilibili.com/video/BV19e4y1q7JJ/](https://www.bilibili.com/video/BV19e4y1q7JJ/?share_source=copy_web&vd_source=6be7dc3ae8a003e840c89d32520c84b0)
+
+{% iframe //player.bilibili.com/player.html?bvid=BV19e4y1q7JJ&poster=1&autoplay=0 %}
 
 1. 克隆到本地并开发
    1. `git clone https://gitee.com/lei2019/mongolian_news_crawler.git` # 到本地
@@ -29,9 +35,30 @@ tags:
    2. `git pull origin master` 再把远端的最新代码拉至本地
    3. `git remote prune origin` 同步“修剪”分支，保持分支的一致性
 
-【十分钟学会正确的github工作流，和开源作者们使用同一套流程】 [https://www.bilibili.com/video/BV19e4y1q7JJ/](https://www.bilibili.com/video/BV19e4y1q7JJ/?share_source=copy_web&vd_source=6be7dc3ae8a003e840c89d32520c84b0)
+```bash
+# 1. 克隆到本地并开发相应的功能
+git clone <repo>
+git checkout -b feat-xxx
+# 编写代码
+git diff
+git add <pathspec>...
+git commit
+git push origin feat-xxx
 
-{% iframe //player.bilibili.com/player.html?bvid=BV19e4y1q7JJ&poster=1&autoplay=0 %}
+# 2. 开发完成后分支合并
+git checkout main
+git pull origin main
+git checkout feat-xxx
+git rebase main
+# 可能会出现，rebase conflict。手动选择保留哪段代码
+git push -f origin feat-xxx
+# 原项目主人采用pull request 中的 `squash and merge` 合并所有不同的commit
+
+# 3. 远端完成更新后
+git branch -d feat-xxx
+git pull origin main
+git remote prune origin
+```
 
 ### 单分支工作流
 
