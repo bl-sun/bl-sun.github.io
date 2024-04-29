@@ -6,6 +6,7 @@ tags:
     - 博客
     - Hexo
     - Butterfly
+cover: //cdn.jsdelivr.net/gh/donggangcj/CDN/image/blog-day1/hexo-gitpage.png
 ---
 
 # 使用hexo搭建博客网站，并使用butterfly主题
