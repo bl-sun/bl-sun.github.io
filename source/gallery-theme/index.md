@@ -4,9 +4,9 @@ date: 2024-04-29 20:40:23
 permalink: /gallery/theme/
 ---
 {% gallery %}
-![](/images/index.jpg)
-![](/images/background.jpg)
-![](/images/cover-default.jpg)
-![](/images/cover-default-2.jpg)
-![](/images/cover-default-3.jpg)
+![](/-/img/index.jpg)
+![](/-/img/background.jpg)
+![](/-/img/cover-default.jpg)
+![](/-/img/cover-default-2.jpg)
+![](/-/img/cover-default-3.jpg)
 {% endgallery %}
