@@ -34,9 +34,9 @@ code_word_wrap: false
 # formal:
 #   icon: link || the description || color
 social:
-  fab fa-github: https://github.com/bl-sun || Github || '#24292e'
+  fab fa-github: //github.com/bl-sun || Github || '#24292e'
   fas fa-envelope: mailto:baolei.sun@qq.com || Email || '#24292e'
-  fab fa-bilibili: https://space.bilibili.com/260045923 || 哔哩哔哩 || '#24292e'
+  fab fa-bilibili: //space.bilibili.com/260045923 || 哔哩哔哩 || '#24292e'
 
 # Image (圖片設置)
 # --------------------------------------
@@ -56,7 +56,7 @@ disable_top_img: false
 index_img: /images/index.jpg
 
 # If the banner of page not setting, it will show the top_img
-default_top_img: /images/top-default.jpg
+default_top_img: /images/index.jpg
 
 # The banner image of archive page
 archive_img:
@@ -102,7 +102,7 @@ error_img:
 error_404:
   enable: true
   subtitle: 'Page Not Found'
-  background: https://i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
+  background: //i.loli.net/2020/05/19/aKOcLiyPl2JQdFD.png
 
 post_meta:
   page: # Home Page
@@ -162,7 +162,7 @@ post_copyright:
   decode: false
   author_href:
   license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+  license_url: //creativecommons.org/licenses/by-nc-sa/4.0/
 
 # Sponsor/reward
 reward:
@@ -171,10 +171,10 @@ reward:
   QR_code:
     - img: /images/reward-wechat.jpg
       link:
-      text: wechat
+      text: 微信
     - img: /images/reward-alipay.jpg
       link:
-      text: alipay
+      text: 支付宝
 
 # Post edit
 # Easily browse and edit blog source code online.
@@ -235,7 +235,7 @@ aside:
       enable: false
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/bl-sun
+      link: //github.com/bl-sun
   card_announcement:
     enable: true
     content: This is my Blog
