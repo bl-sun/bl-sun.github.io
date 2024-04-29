@@ -90,3 +90,42 @@ npm install hexo-renderer-pug hexo-renderer-stylus --save
 ```
 
 其他配置请参照[https://butterfly.js.org/posts/dc584b87/](https://butterfly.js.org/posts/dc584b87/)
+
+将配置或修改推送到远程仓库
+
+```shell
+git add .
+git commit -m "somme comment"
+git push
+```
+
+## 自此以后
+
+以上配置基本只操作一次，以后就可以开始愉快的写文章啦！
+
+### 新建`post`
+
+```shell
+hexo new post-name
+```
+
+### 启动本地服务
+
+```shell
+hexo server
+```
+
+
+### 推送到远程
+
+```shell
+git add .
+git commit -m "somme comment"
+git push
+```
+
+### 压缩仓库体积
+
+由于`git`是增量更新的，按照道理来讲应该会越来越大，应该有方法用于删除之前的`commit`只保留当前的版本。
+
+**这件事情留给需要的时候再做吧**
