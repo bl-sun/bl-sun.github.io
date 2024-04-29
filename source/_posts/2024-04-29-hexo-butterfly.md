@@ -1,6 +1,8 @@
 ---
 title: 使用hexo搭建博客网站，并使用butterfly主题
 date: 2024-04-29 10:48:09
+categories:
+   - 建站
 tags:
     - 建站
     - 博客

@@ -1,6 +1,8 @@
 ---
 title: git 学习笔记
 date: 2024-04-28 21:10:18
+categories:
+   - git
 tags: 
    - git
    - 编程
