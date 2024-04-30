@@ -15,8 +15,8 @@ cover: //tse2-mm.cn.bing.net/th/id/OIP-C.N2A89Kvz4PMLfkYBBqgcOAHaEK?rs=1&pid=Img
 
 【十分钟学会正确的github工作流，和开源作者们使用同一套流程】 [https://www.bilibili.com/video/BV19e4y1q7JJ/](https://www.bilibili.com/video/BV19e4y1q7JJ/?share_source=copy_web&vd_source=6be7dc3ae8a003e840c89d32520c84b0)
 
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?bvid=BV19e4y1q7JJ&poster=1&autoplay=0" frameborder="no" scrolling="no"></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-top: calc(100% * 9 / 16);">
+<iframe style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;" src="//player.bilibili.com/player.html?bvid=BV19e4y1q7JJ&poster=1&autoplay=0" frameborder="no" scrolling="no"></iframe>
 </div>
 
 1. 克隆到本地并开发
@@ -93,8 +93,8 @@ git remote prune origin
 
 【团队开发神器 Git/GitHub 自学指南，几分钟掌握学习重点】 [https://www.bilibili.com/video/BV1KZ4y1e7cG/](https://www.bilibili.com/video/BV1KZ4y1e7cG/?share_source=copy_web&vd_source=6be7dc3ae8a003e840c89d32520c84b0)
 
-<div style="position: relative; padding: 30% 45%;">
-<iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="//player.bilibili.com/player.html?bvid=BV1KZ4y1e7cG&poster=1&autoplay=0" frameborder="no" scrolling="no"></iframe>
+<div style="position: relative; width: 100%; height: 0; padding-top: calc(100% * 9 / 16);">
+<iframe style="position: absolute; left: 0; top: 0; width: 100%; height: 100%;" src="//player.bilibili.com/player.html?bvid=BV1KZ4y1e7cG&poster=1&autoplay=0" frameborder="no" scrolling="no"></iframe>
 </div>
 
 ## 3. 子模块 submodule
