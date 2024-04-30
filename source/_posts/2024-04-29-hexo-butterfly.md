@@ -106,15 +106,20 @@ git push
 
 以上配置基本只操作一次，以后就可以开始愉快的写文章啦！
 
-### 新建`post`
+### 写博客
+
+一般情况下我们会开启一个hexo server然后新建一个post或者打开之前的post。这样可以一边修改一边查看页面的变化。（需要手动刷新）
+
+#### 新建`post`
 
 ```shell
 hexo new post-name
 ```
 
-### 启动本地服务
+#### 启动本地服务
 
 ```shell
+hexo clean
 hexo server
 ```
 
