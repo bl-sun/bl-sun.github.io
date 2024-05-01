@@ -921,7 +921,8 @@ css_prefix: true
 inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
-    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4530244_sqplwqcvuiq.css">
+    - <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4530244_sqplwqcvuiq.css"> # iconfont图标 https://www.iconfont.cn/
+    - <link rel="stylesheet" href="/-/css/bl-sun.css">
   bottom:
     # - <script src="xxxx"></script>
     - <div class="aplayer no-destroy" data-id="60198" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay="true"> </div>
