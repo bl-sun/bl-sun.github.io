@@ -141,7 +141,7 @@ $card-bg = $white
 
 不懂`.styl`文件的语法，但是看起来是写死了的。
 
-还是在`source\css\var.styl`文件中可以找到如下代码
+还是在`themes/butterfly/source/css/var.styl`文件中可以找到如下代码
 
 ```styl
 $theme-color = $themeColorEnable && hexo-config('theme_color.main') ? convert(hexo-config('theme_color.main')) : $bright-blue
@@ -177,4 +177,73 @@ for i in list:
 reset(args)
     for arg in args
         $theme-{i} = $themeColorEnable && hexo-config('theme_color.{i}') ? convert(hexo-config('theme_color.{i}')) : $theme-{i}
+```
+
+# 成果展示
+
+在`themes\butterfly\scripts\events\stylus.js`中注册一个`styl`函数
+
+```js
+hexo.extend.filter.register('stylus:renderer', style => {
+  style.define('$format_css', name => {return String(name).replace(/_/g, '-');})
+})
+```
+
+> 这段代码就是注册了一个`$format_css`函数，它被用来将字符中的`_`替换为`-`
+> 不用`String()`的话会报错，不知道是什么原因。主要参考了[`hexo-config()`](https://github.com/hexojs/hexo-renderer-stylus/blob/master/lib/renderer.js)的代码。
+> 本来想的是照着它这种读取的方式自己读取的，后来自己一调用`hexo-config()`就可以得到相应的键值对呢。白忙活半天
+
+在`themes\butterfly\source\css\index.styl`中加入如下测试代码
+
+```styl
+//test
+:root
+  for prop in hexo-config('theme_color')
+    --theme-{$format_css(prop[0])} convert(prop[1]) unless prop[0]=='enable'
+```
+> 哦对，`hexo-config('theme_color')`要是`yml`里有`theme_color.light.card_bg`这种三级的配置的话好像不知道会出现什么问题哎。没有尝试。
+
+我的配置文件
+
+```yml
+theme_color:
+  enable: true
+  main: "#49B1F5"
+  paginator: "#00c4b6"
+  button_hover: "#FF7242"
+  text_selection: "#00c4b6"
+  link_color: "#99a9bf"
+  meta_color: "#858585"
+  hr_color: "#A4D8FA"
+  code_foreground: "#F47466"
+  code_background: "rgba(27, 31, 35, .05)"
+  toc_color: "#00c4b6"
+  blockquote_padding_color: "#49b1f5"
+  blockquote_background_color: "#49b1f5"
+  scrollbar_color: "#49b1f5"
+  meta_theme_color_light: "rgba(255, 255, 255, .5)" # #fff
+  meta_theme_color_dark: "rgba(13, 13, 13, .5)" # #0d0d0d
+```
+
+
+在`themes\butterfly\source\css\index.styl`中生成的样式如下：
+
+```css
+:root {
+  --theme-main: #49b1f5;
+  --theme-paginator: #00c4b6;
+  --theme-button-hover: #ff7242;
+  --theme-text-selection: #00c4b6;
+  --theme-link-color: #99a9bf;
+  --theme-meta-color: #858585;
+  --theme-hr-color: #a4d8fa;
+  --theme-code-foreground: #f47466;
+  --theme-code-background: rgba(27,31,35,0.05);
+  --theme-toc-color: #00c4b6;
+  --theme-blockquote-padding-color: #49b1f5;
+  --theme-blockquote-background-color: #49b1f5;
+  --theme-scrollbar-color: #49b1f5;
+  --theme-meta-theme-color-light: rgba(255,255,255,0.5);
+  --theme-meta-theme-color-dark: rgba(13,13,13,0.5);
+}
 ```
