@@ -179,7 +179,7 @@ reset(args)
         $theme-{i} = $themeColorEnable && hexo-config('theme_color.{i}') ? convert(hexo-config('theme_color.{i}')) : $theme-{i}
 ```
 
-# 成果展示
+### 成果展示
 
 在`themes\butterfly\scripts\events\stylus.js`中注册一个`styl`函数
 
