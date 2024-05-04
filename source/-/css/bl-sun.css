@@ -51,3 +51,13 @@
 [data-theme='dark']{
     --card-bg: rgba(13, 13, 13, .6);
 }
+
+#footer{
+    background: var(--card-bg);
+}
+#footer-wrap{
+    color: var(--font-color);
+    a{
+        color: var(--font-color);
+    }
+}
