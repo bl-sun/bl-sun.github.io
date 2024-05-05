@@ -44,12 +44,18 @@
     }
 } */
 
+:root{
+    --static-kf-color-neon-light: color-neon-light 2.5s linear infinite;
+}
+
 [data-theme='light']{
     --card-bg: rgba(255, 255, 255, .8);
+    --title-animation: none;
 }
 
 [data-theme='dark']{
     --card-bg: rgba(13, 13, 13, .6);
+    --title-animation: var(--static-kf-color-neon-light);
 }
 
 #footer{
@@ -76,7 +82,7 @@
 
 /* #page-header #site-title{ */
 :is(#site-title, #site-subtitle, .post-title){
-    animation: color-neon-light 2.5s linear infinite;
+    animation: var(--title-animation);
 }
 
 @keyframes color-neon-light {
