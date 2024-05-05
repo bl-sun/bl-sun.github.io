@@ -61,3 +61,33 @@
         color: var(--font-color);
     }
 }
+
+/* 首页标题淡入淡出 */
+
+/* #site-info{
+    opacity: 0;
+    transition: 1s;
+    #page-header:hover & {
+        opacity: 1;
+    }
+} */
+
+/* 霓虹特效 */
+
+/* #page-header #site-title{ */
+:is(#site-title, #site-subtitle, .post-title){
+    animation: color-neon-light 2.5s linear infinite;
+}
+
+@keyframes color-neon-light {
+    0% {
+        color:#0ff;
+        text-shadow: 0 0 5px #fc199a, 0 0 10px rgba(252,25,154,.486);
+        filter: hue-rotate(0);
+    }
+    100% {
+        color:#0ff;
+        text-shadow: 0 0 5px #fc199a, 0 0 10px rgba(252,25,154,.486);
+        filter: hue-rotate(360deg);
+    }
+}
