@@ -10,9 +10,10 @@ nav:
 # Menu 目錄
 menu:
   首页: / || fas fa-home
-  归档: /archives/ || fas fa-archive
-  标签: /tags/ || fas fa-tags
-  分类: /categories/ || fas fa-folder-open
+  文章||fa-solid fa-file-signature:
+    归档: /archives/ || fas fa-archive
+    标签: /tags/ || fas fa-tags
+    分类: /categories/ || fas fa-folder-open
   工具: /tools/ || fas fa-screwdriver-wrench
   娱乐||fa fa-heartbeat:
     音乐: /music/ || fas fa-music
