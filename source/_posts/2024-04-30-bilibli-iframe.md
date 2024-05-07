@@ -101,7 +101,51 @@ cover: //www.jiejisuan.com/images/upload/image/20180913/20180913110552_13874.jpg
 </div>
 ```
 
-<div bl-w-h>
+<style>
+[data-bl-w-h],
+[style*="--bl-w-h"] {
+    /* 这个没有作用 */
+    --bl-w-h: attr(data-bl-w-h number, 16/9); 
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: calc(100%/(var(--bl-w-h)));
+
+    >* {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+[data-bl-w-h] {--bl-w-h: 16/9;}
+[data-bl-w-h="4/3"] {--bl-w-h: 4/3;}
+[data-bl-w-h="1/1"] {--bl-w-h: 1/1;}
+
+/* [bl-w-h], [style*="--bl-w-h"] {
+    position: relative;
+    box-sizing: border-box;
+    > * {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%
+    }
+    &::before {
+        position: relative;
+        display: block; 
+        content: "";
+        padding-top: calc(100%/(var(--bl-w-h)));
+        box-sizing: border-box;
+    }
+} */
+</style>
+<div data-bl-w-h>
 <iframe src="//player.bilibili.com/player.html?bvid=BV19e4y1q7JJ&poster=1&autoplay=0" frameborder="no" scrolling="no"></iframe>
 </div>
 
