@@ -91,7 +91,9 @@
 /* 霓虹特效 */
 
 /* #page-header #site-title{ */
-:is(#site-title, #site-subtitle, .post-title) {
+#site-title,
+#site-subtitle,
+.post-title {
     animation: var(--title-animation);
 }
 
