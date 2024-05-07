@@ -4,3 +4,8 @@
 - butterfly: [https://butterfly.js.org/](https://butterfly.js.org/)
 - 相似的博客网站: [https://weidows.github.io](https://weidows.github.io)
     - 个人主页: [https://github.com/Weidows](https://github.com/Weidows)
+
+### 环境
+
+- node: 18.16.0
+- npm: 9.5.1
