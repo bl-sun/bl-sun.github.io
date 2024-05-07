@@ -41,7 +41,7 @@ cover: https://cbu01.alicdn.com/img/ibank/2018/925/631/9475136529_644721273.jpg
     --title-animation: var(--static-kf-color-neon-light);
 }
 /* 在标题上设置特效 */
-:is(#site-title, #site-subtitle, .post-title){
+#site-title, #site-subtitle, .post-title{
     animation: var(--title-animation);
 }
 ```
