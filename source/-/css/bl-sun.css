@@ -12,58 +12,6 @@
     --title-animation: var(--static-kf-color-neon-light);
 }
 
-[bl-w-h] {
-    /* 这个代码还没有实现 */
-    /* --bl-w-h: attr(bl-w-h number, 16/9); */
-    --bl-w-h: 16/9;
-}
-
-[bl-w-h="1/1"] {
-    --bl-w-h: 1/1
-}
-
-[bl-w-h="4/3"] {
-    --bl-w-h: 4/3
-}
-
-[bl-w-h],
-[style*="--bl-w-h"] {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-top: calc(100%/(var(--bl-w-h)));
-
-    >* {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-/* [bl-w-h], [style*="--bl-w-h"] {
-    position: relative;
-    box-sizing: border-box;
-    > * {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        box-sizing: border-box;
-        width: 100%;
-        height: 100%
-    }
-    &::before {
-        position: relative;
-        display: block; 
-        content: "";
-        padding-top: calc(100%/(var(--bl-w-h)));
-        box-sizing: border-box;
-    }
-} */
-
 /* 设置页脚字体和背景 */
 
 #footer {
