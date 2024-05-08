@@ -1,11 +1,12 @@
 ---
 title: bilibili视频使用iframe嵌入Markdown的最佳方案
 date: 2024-04-30 22:01:00
+updated: 2024-04-30 22:01:00
 tags:
     - 建站
     - 技巧
 categories:
-    - 建站
+    - [建站]
 description:
 cover: //www.jiejisuan.com/images/upload/image/20180913/20180913110552_13874.jpg
 ---

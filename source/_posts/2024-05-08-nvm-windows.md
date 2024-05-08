@@ -1,11 +1,12 @@
 ---
 title: NVM for Windows
 date: 2024-05-08 14:52:15
+updated: 2024-05-08 14:52:15
 tags:
     - nodejs
     - 编程
 categories:
-    - 工具
+    - [工具]
 description:
 cover: https://www.freecodecamp.org/news/content/images/size/w2000/2022/08/nvmWindows.png
 ---

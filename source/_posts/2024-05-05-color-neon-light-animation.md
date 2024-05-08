@@ -1,13 +1,14 @@
 ---
 title: CSS霓虹字体特效
 date: 2024-05-05 20:21:22
+updated: 2024-05-05 20:21:22
 tags:
     - CSS
     - Butterfly
     - Hexo
     - 建站
 categories:
-    - 建站
+    - [建站]
 description:
 cover: https://cbu01.alicdn.com/img/ibank/2018/925/631/9475136529_644721273.jpg
 ---

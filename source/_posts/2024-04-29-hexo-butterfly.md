@@ -1,13 +1,14 @@
 ---
 title: 使用hexo搭建博客网站，并使用butterfly主题
 date: 2024-04-29 10:48:09
-categories:
-   - 建站
+updated: 2024-04-29 10:48:09
 tags:
     - 建站
     - 博客
     - Hexo
     - Butterfly
+categories:
+   - [建站]
 cover: //cdn.jsdelivr.net/gh/donggangcj/CDN/image/blog-day1/hexo-gitpage.png
 ---
 
