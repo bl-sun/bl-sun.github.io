@@ -1,23 +1,30 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: 廖雪峰
-      link: //www.liaoxuefeng.com
-      avatar: //www.liaoxuefeng.com/favicon.ico
-      descr: 研究互联网产品和技术，提供原创中文精品教程--Java教程|Python教程|区块链
-    - name: ⭐️齐下无贰⭐️
-      link: //weidows.github.io
-      avatar: //cdn.jsdelivr.net/gh/Weidows/Weidows/image/avatar.png
-      descr: May all the beauty be bless.✨（本网站的灵感来源）
-    - name: 刘明野
-      link: //www.liumingye.cn
-      avatar: //dn-qiniu-avatar.qbox.me/avatar/6ee1ef2b48bf9b3fad60ee42bad6234b?d=mm&r=G
-      descr: 分享互联网技术,数码科技,记录生活点滴的个人博客!
     - name: Hexo
       link: //hexo.io/zh-tw/
       avatar: //d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
       descr: 快速简单且强大的博客框架
-    
+    - name: Butterfly
+      link: https://github.com/jerryc127/hexo-theme-butterfly
+      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
+      descr: '🦋 A Hexo Theme: Butterfly'
+    - name: MYW
+      link: https://crazywong.com/
+      avatar: https://crazywong.com/img/avatar.png
+      descr: 今日事,今日畢
+    - name: ⭐️齐下无贰⭐️
+      link: //weidows.github.io
+      avatar: //cdn.jsdelivr.net/gh/Weidows/Weidows/image/avatar.png
+      descr: May all the beauty be bless.✨（本网站的灵感来源）
+    - name: 廖雪峰
+      link: //www.liaoxuefeng.com
+      avatar: //www.liaoxuefeng.com/favicon.ico
+      descr: 研究互联网产品和技术，提供原创中文精品教程--Java教程|Python教程|区块链
+    - name: 刘明野
+      link: //www.liumingye.cn
+      avatar: //dn-qiniu-avatar.qbox.me/avatar/6ee1ef2b48bf9b3fad60ee42bad6234b?d=mm&r=G
+      descr: 分享互联网技术,数码科技,记录生活点滴的个人博客!
 
 - class_name: 网站
   class_desc: 值得推荐的网站
