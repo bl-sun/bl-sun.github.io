@@ -11,6 +11,6 @@ type: "link"
 ```yml
 name: 小玉石的博客
 link: //bl-sun.github.io
-avatar: //bl-sun.github.io/images/avatar.jpeg
+avatar: //bl-sun.github.io/-/img/avatar.jpeg
 descr: 爱生活，爱自己
 ```
