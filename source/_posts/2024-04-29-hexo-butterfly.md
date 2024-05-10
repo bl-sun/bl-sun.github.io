@@ -1,7 +1,7 @@
 ---
 title: 使用hexo搭建博客网站，并使用butterfly主题
 date: 2024-04-29 10:48:09
-updated: 2024-04-29 10:48:09
+updated: 2024-05-10 20:27:09
 tags:
     - 建站
     - 博客
@@ -18,35 +18,31 @@ cover: //cdn.jsdelivr.net/gh/donggangcj/CDN/image/blog-day1/hexo-gitpage.png
 
 首先需要有[Node.js](http://nodejs.org/)和[Git](http://git-scm.com/)，这一点对于开发人员应该非常简单。
 
-## 2. 安装Hexo
+> 推荐使用`NVM for Windows`安装`nodejs`
 
-所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。
+## 2. 建站
 
-```shell
-npm install -g hexo-cli
-```
-
-## 3. 建站
-
-执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。
+创建一个空文件夹，在文件夹内执行下列命令，Hexo将会在该文件夹中新建所需要的文件。
 
 ```shell
-hexo init <folder>
-cd <folder>
-npm install
+npx hexo init
 ```
+
+> 第一次执行时可能较慢，npx会临时安装hexo包，并在运行结束后删除hexo包。这样无需对hexo进行全局安装。
+>
+> 但是`hexo init`会在文件夹中局部安装hexo。并安装所依赖的包。因此也无需执行`npm install`
 
 使用`server`子命令查看当前网站
 
 ```shell
-hexo server
+npx hexo server
 ```
 
-## 4. 部署到github
+## 3. 部署到github
 
 首先你需要一个[github](https://github.com/)账号，请在你的[ssh设置页面](https://github.com/settings/keys)里[配置ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)用于git链接github。
 
-### 4.1 代码上传到github
+### 3.1 代码上传到github
 
 **step 1. 建立名为`<你的 GitHub 用户名>.github.io`的储存库**
 
@@ -73,7 +69,7 @@ git push -u origin main
 
 > 默认情况下`public/`不会被上传(也不该被上传)，确保`.gitignore`文件中包含一行`public/`。整体文件夹结构应该与[示例储存库](https://github.com/hexojs/hexo-starter)大致相似。
 
-## 5. 配置主题
+## 4. 配置主题
 
 ```shell
 git submodule add -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
@@ -111,17 +107,17 @@ git push
 
 一般情况下我们会开启一个hexo server然后新建一个post或者打开之前的post。这样可以一边修改一边查看页面的变化。（需要手动刷新）
 
-#### 新建`post`
+#### 1 新建`post`
 
 ```shell
-hexo new post-name
+npx hexo new post-name
 ```
 
-#### 启动本地服务
+#### 2 启动本地服务
 
 ```shell
-hexo clean
-hexo server
+npx hexo clean
+npx hexo server
 ```
 
 
@@ -131,6 +127,32 @@ hexo server
 git add .
 git commit -m "somme comment"
 git push
+```
+
+对博客所做的所有更改无论是配置或者添加新的文章都可以通过推送代码，快速部署。
+
+### 重新搭建博客环境
+
+当我们换了另一台设备时，可能需要重新搭建博客环境
+
+#### 1 安装git和nodejs
+
+#### 2 从代码仓库克隆源代码
+
+```shell
+git clone 
+```
+
+#### 3 安装博客依赖
+
+```shell
+npm install
+```
+
+#### 4 尝试启动博客
+
+```shell
+npx hexo server
 ```
 
 ### 压缩仓库体积
