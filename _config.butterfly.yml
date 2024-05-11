@@ -936,7 +936,7 @@ CDN:
   # The CDN provider of internal scripts (主題內部 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
   # Dev version can only choose. ( dev版的主題只能設置為 local )
-  internal_provider: local
+  internal_provider: jsdelivr
 
   # The CDN provider of third party scripts (第三方 js 的 cdn 配置)
   # option: local/jsdelivr/unpkg/cdnjs/custom
@@ -960,7 +960,7 @@ CDN:
     # artalk_css:
     # artalk_js:
     # blueimp_md5:
-    busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
+    # busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
     # canvas_fluttering_ribbon:
     # canvas_nest:
     # canvas_ribbon:
