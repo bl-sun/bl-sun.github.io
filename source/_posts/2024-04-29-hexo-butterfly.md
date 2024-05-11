@@ -140,7 +140,7 @@ git push
 #### 2 从代码仓库克隆源代码
 
 ```shell
-git clone 
+git clone --recursive <repo>
 ```
 
 #### 3 安装博客依赖
