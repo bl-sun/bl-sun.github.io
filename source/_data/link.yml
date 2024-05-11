@@ -27,7 +27,7 @@
   link_list:
     - name: Butterfly
       link: https://github.com/jerryc127/hexo-theme-butterfly
-      avatar: https://fastly.jsdelivr.net/gh/jerryc127/CDN/img/butterfly-github-avatar.png
+      avatar: https://cdn.jsdelivr.net/gh/jerryc127/butterfly.js.org@main/source/img/avatar.png
       descr: '🦋 A Hexo Theme: Butterfly'
     - name: Hexo
       link: //hexo.io/zh-tw/
