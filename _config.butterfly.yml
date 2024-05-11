@@ -182,10 +182,10 @@ reward:
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
+  enable: true
   # url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/
-  # For example: https://github.com/jerryc127/butterfly.js.org/edit/main/source/
-  url:
+  # For example: https://github.com/bl-sun/bl-sun.github.io/edit/main/source/
+  url: https://github.com/bl-sun/bl-sun.github.io/blob/main/source/
 
 # Related Articles
 related_post:
