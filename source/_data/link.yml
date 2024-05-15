@@ -1,10 +1,10 @@
 - class_name: 友情链接
   class_desc: 那些人，那些事
   link_list:
-    - name: MYW
+    - name: CrazyWong
       link: https://crazywong.com/
       avatar: https://crazywong.com/img/avatar.png
-      descr: 今日事,今日畢
+      descr: 熱衷學習，熱衷生活
     - name: ⭐️齐下无贰⭐️
       link: //weidows.github.io
       avatar: //cdn.jsdelivr.net/gh/Weidows/Weidows/image/avatar.png
