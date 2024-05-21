@@ -1,7 +1,7 @@
 ---
 title: 使用hexo搭建博客网站，并使用butterfly主题
 date: 2024-04-29 10:48:09
-updated: 2024-05-10 20:27:09
+updated: 2024-05-21 15:57:00
 tags:
     - 建站
     - 博客
@@ -72,6 +72,7 @@ git push -u origin main
 ## 4. 配置主题
 
 ```shell
+npm uninstall hexo-theme-landscape
 git submodule add -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly
 ```
 
