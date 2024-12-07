@@ -29,3 +29,7 @@ top_img:
     - username: sss
     - password: sss
 
+## 参考
+
+- [one-key-ikev2.sh](https://github.com/quericy/one-key-ikev2-vpn/blob/master/one-key-ikev2.sh#L499)
+
